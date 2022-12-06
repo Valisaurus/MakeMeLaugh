@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Rubik Bubbles';
+  src: url('./fonts/RubikBubbles-Regular.woff2') format('woff2'),
+    url('./fonts/RubikBubbles-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mansalva';
+  src: url('./fonts/Mansalva-Regular.woff2') format('woff2'),
+    url('./fonts/Mansalva-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('./images/hahax2.png');
+  background-color: pink;
+}
+main {
+  width: 20rem;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+h1 {
+  font-family: 'Rubik Bubbles';
+  color: rgb(239, 133, 205);
+}
+
+button {
+  background-color: rgb(246, 142, 159);
+  margin: 2rem;
+  padding: 1rem;
+  border: solid rgb(186, 51, 186);
+  border-radius: 1rem;
+  font-family: 'Mansalva';
+}
