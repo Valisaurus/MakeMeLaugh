@@ -66,9 +66,9 @@ button.addEventListener('click', () => {
 const body = document.querySelector('body');
 
 //mobile version
-const mobileVersion = () => {
+const mobileOrDesktop = () => {
   if (window.innerWidth < 500) {
-    //when hovering over the button mouth images are randomly displayed
+    //when clicking the button mouth images are randomly displayed
     button.addEventListener('click', () => {
       for (i = 0; i < 2; i++) {
         const mouth = document.createElement('img');
@@ -95,7 +95,7 @@ const mobileVersion = () => {
     });
   }
 };
-mobileVersion();
+mobileOrDesktop();
 
 // button.addEventListener('mouseleave', () => {
 //   const mouths = document.querySelectorAll('mouth');
