@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background-image: url('./images/hahax2.png');
+  background-image: url('./images/haha2x.png');
   background-color: pink;
 }
 main {
@@ -48,4 +48,8 @@ button {
   border: solid rgb(186, 51, 186);
   border-radius: 1rem;
   font-family: 'Mansalva';
+}
+
+.mouth {
+  position: absolute;
 }

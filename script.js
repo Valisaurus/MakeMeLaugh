@@ -30,9 +30,6 @@ const laughs = [
   },
 ];
 
-//colors array
-const colors = ['black', 'red'];
-
 // const laughter = document.querySelectorAll('.laugh-audio');
 
 const laughter = document.querySelector('source');
@@ -67,6 +64,30 @@ button.addEventListener('click', () => {
 
 // const heading = document.querySelector('h1');
 
+const body = document.querySelector('body');
+
+button.addEventListener('mouseover', () => {
+  for (i = 0; i < 2; i++) {
+    const mouth = document.createElement('img');
+    mouth.src = './images/mouth.png';
+    mouth.classList.add('mouth');
+    mouth.style.top = Math.random() * window.innerHeight + 'px';
+    mouth.style.left = Math.random() * window.innerWidth + 'px';
+    mouth.style.width = Math.random() * (200 + 100) + 'px';
+    body.appendChild(mouth);
+  }
+});
+
+// button.addEventListener('mouseleave', () => {
+//   const mouths = document.querySelectorAll('mouth');
+//   mouths.remove;
+// });
+
+// heading.addEventListener('mouseleave', () => {
+//   console.log('hej');
+//   //   heading.style.color = 'rgb(239, 133, 205)';
+// });
+
 // heading.addEventListener('mouseover', () => {
 //   heading.style.color = heading.dataset.color;
 // });
@@ -74,13 +95,34 @@ button.addEventListener('click', () => {
 //   heading.style.color = 'rgb(239, 133, 205)';
 // });
 
-const heading = document.querySelector('h1');
-heading.addEventListener('mouseover', () => {
-  colors.forEach((color) => {
-    heading.style.color = color;
-    // console.log(color[0]);
-  });
-});
+//colors array
+
+// const heading = document.querySelector('h1');
+// const colors = ['black', 'red'];
+
+// const changeColor = () => {
+//   for (i = 0; i < colors.length; i++) {
+//     heading.addEventListener('mouseover', () => {
+//       heading.style.color = colors[i];
+//     });
+//   }
+// };
+
+// changeColor();
+
+// var colours = ['#CCCDFF', '#BAC7E8', '#D9EEFF', '#BADFE8'];
+
+// for (i = 0; i < colors.length; i++) {
+//   heading.addEventListener('mouseover', () => {
+//     heading.style.color = colors;
+//   });
+// }
+
+// colors.forEach((color) => {
+//   heading.style.color = color;
+//   // console.log(color[0]);
+// });
+
 // console.log(colors);
 // button.forEach(butt => {
 //   butt.addEventListener("click", () => {
