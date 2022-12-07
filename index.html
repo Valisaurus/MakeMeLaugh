@@ -38,16 +38,32 @@ The application should be useless 🙅‍♀️ -->
     <title>Silicon Vali</title>
   </head>
   <body>
-    <!-- <img
-      src="./images/hahax2.png"
-      alt="text that says haha and mouths on a purple background"
-    /> -->
+    <img
+      class="background-img"
+      src="./images/laughs-haha-390w.png"
+      srcset="
+        /images/laughs-haha-390w.png   390w,
+        /images/laughs-haha-1280w.png 1280w
+      "
+      sizes="
+            (min-width:350px) 390w,
+            (min-width:900px) 1280w"
+      alt="text that says haha on a purple background"
+    />
     <main>
-      <h1>MAKE ME LAUGH</h1>
-      <div></div>
-      <audio controls>
-        <source src="./laughs/big-intense-laugh.mp3" type="audio/mpeg" />
-      </audio>
+      <div class="card">
+        <img
+          class="kul"
+          src="./images/make-me-laughx075.png"
+          alt="a girl who says
+        'what fun I'm having'"
+        />
+        <span>Bild: Therese Pettersson Lindvall</span>
+        <h1>FÅ MIG ATT SKRATTA</h1>
+        <audio controls>
+          <source src="./laughs/big-intense-laugh.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>

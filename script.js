@@ -20,11 +20,6 @@ const laughs = [
     name: 'shortLaugh',
     sound: './laughs/short-laugh.mp3',
   },
-
-  {
-    name: 'sneakyLaugh',
-    sound: '.laughs/sneaky-laugh.mp3',
-  },
   {
     name: 'womanLaugh',
     sound: './laughs/woman-laugh.mp3',
@@ -37,11 +32,14 @@ const laughter = document.querySelector('source');
 
 const main = document.querySelector('main');
 
+const div = document.querySelector('.card');
+
 //creating a button
 const createButton = () => {
   const button = document.createElement('button');
   button.innerHTML = 'Make me laugh';
-  main.append(button);
+  button.style.cursor = 'pointer';
+  div.appendChild(button);
   return button;
 };
 //puts the function createButton in the variable button
@@ -74,9 +72,11 @@ const mobileOrDesktop = () => {
         const mouth = document.createElement('img');
         mouth.src = './images/mouth.png';
         mouth.classList.add('mouth');
-        mouth.style.top = Math.random() * window.innerHeight + 'px';
-        mouth.style.left = Math.random() * window.innerWidth + 'px';
+        mouth.style.position = 'absolute';
+        mouth.style.top = Math.random() * (window.innerHeight - 100) + 'px';
+        mouth.style.left = Math.random() * (window.innerWidth - 200) + 'px';
         mouth.style.width = Math.random() * (100 + 100) + 'px';
+        mouth.style.transform = 'rotate(angle)';
         body.appendChild(mouth);
       }
     });
@@ -87,8 +87,9 @@ const mobileOrDesktop = () => {
         const mouth = document.createElement('img');
         mouth.src = './images/mouth.png';
         mouth.classList.add('mouth');
-        mouth.style.top = Math.random() * window.innerHeight + 'px';
-        mouth.style.left = Math.random() * window.innerWidth + 'px';
+        mouth.style.position = 'absolute';
+        mouth.style.top = Math.random() * (window.innerHeight - 100) + 'px';
+        mouth.style.left = Math.random() * (window.innerWidth - 200) + 'px';
         mouth.style.width = Math.random() * (100 + 100) + 'px';
         body.appendChild(mouth);
       }
@@ -96,6 +97,19 @@ const mobileOrDesktop = () => {
   }
 };
 mobileOrDesktop();
+
+// const mouths = document.querySelectorAll('img');
+
+// button.addEventListener('mouseleave', () => {
+//   console.log(mouths);
+//   mouths.remove();
+
+//   // if (mouths.classList.contains('mouth')) {
+//   //   mouths.classList.toggle('hide');
+//   // }
+//   // console.log(mouths);
+//   // mouths.classList.toggle('.mouth');
+// });
 
 // button.addEventListener('mouseleave', () => {
 //   const mouths = document.querySelectorAll('mouth');
