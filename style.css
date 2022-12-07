@@ -40,7 +40,7 @@
 
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
 }
 body {
   height: 100vh;
@@ -54,7 +54,8 @@ body {
   background-image: url('./images/haha1x.png');
   background-color: pink; */
 }
-main {
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
