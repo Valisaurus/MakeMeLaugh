@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
   /*
   background-image: url('./images/haha1x.png');
   background-color: pink; */
