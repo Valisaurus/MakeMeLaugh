@@ -88,7 +88,7 @@ const mobileOrDesktop = () => {
         mouth.src = './images/mouth.png';
         mouth.classList.add('mouth');
         mouth.style.position = 'absolute';
-        mouth.style.top = Math.random() * (window.innerHeight - 100) + 'px';
+        mouth.style.top = Math.random() * (window.innerHeight - 200) + 'px';
         mouth.style.left = Math.random() * (window.innerWidth - 200) + 'px';
         mouth.style.width = Math.random() * (100 + 100) + 'px';
         body.appendChild(mouth);
