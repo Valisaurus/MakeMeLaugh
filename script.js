@@ -98,6 +98,16 @@ const mobileOrDesktop = () => {
 };
 mobileOrDesktop();
 
+const backgroundImages = () => {
+  if (window.innerWidth < 500) {
+    const bgImg = document.querySelector('background-image');
+    document.body.style.backgroundImage = "url('/svg/laughs-hahax640w.svg')";
+  } else {
+    document.body.style.backgroundImage = "url('/svg/laughs-hahax1585w.svg')";
+  }
+};
+backgroundImages();
+
 // const mouths = document.querySelectorAll('img');
 
 // button.addEventListener('mouseleave', () => {
