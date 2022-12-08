@@ -98,6 +98,7 @@ const mobileOrDesktop = () => {
 };
 mobileOrDesktop();
 
+//changes background image depending on screen size (mobile or desktop)
 const backgroundImages = () => {
   if (window.innerWidth < 500) {
     const bgImg = document.querySelector('background-image');
@@ -107,78 +108,3 @@ const backgroundImages = () => {
   }
 };
 backgroundImages();
-
-// const mouths = document.querySelectorAll('img');
-
-// button.addEventListener('mouseleave', () => {
-//   console.log(mouths);
-//   mouths.remove();
-
-//   // if (mouths.classList.contains('mouth')) {
-//   //   mouths.classList.toggle('hide');
-//   // }
-//   // console.log(mouths);
-//   // mouths.classList.toggle('.mouth');
-// });
-
-// button.addEventListener('mouseleave', () => {
-//   const mouths = document.querySelectorAll('mouth');
-//   mouths.remove;
-// });
-
-// heading.addEventListener('mouseleave', () => {
-//   console.log('hej');
-//   //   heading.style.color = 'rgb(239, 133, 205)';
-// });
-
-// heading.addEventListener('mouseover', () => {
-//   heading.style.color = heading.dataset.color;
-// });
-// heading.addEventListener('mouseleave', () => {
-//   heading.style.color = 'rgb(239, 133, 205)';
-// });
-
-//colors array
-
-// const heading = document.querySelector('h1');
-// const colors = ['black', 'red'];
-
-// const changeColor = () => {
-//   for (i = 0; i < colors.length; i++) {
-//     heading.addEventListener('mouseover', () => {
-//       heading.style.color = colors[i];
-//     });
-//   }
-// };
-
-// changeColor();
-
-// var colours = ['#CCCDFF', '#BAC7E8', '#D9EEFF', '#BADFE8'];
-
-// for (i = 0; i < colors.length; i++) {
-//   heading.addEventListener('mouseover', () => {
-//     heading.style.color = colors;
-//   });
-// }
-
-// colors.forEach((color) => {
-//   heading.style.color = color;
-//   // console.log(color[0]);
-// });
-
-// console.log(colors);
-// button.forEach(butt => {
-//   butt.addEventListener("click", () => {
-//     audio.play();
-// });
-
-// colors.forEach(function (color, index) {
-//   heading.addEventListener('click', function () {});
-//   console.log(color);
-// });
-
-// colors.forEach((color, index) => {
-//   heading.addEventListener('mouseover', () => {
-//     heading.style.color = color[0];
-//   });
-// });

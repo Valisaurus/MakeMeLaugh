@@ -1,8 +1,13 @@
 INSERT MANDATORY GIF
+<img src="http://www.grantland.com/blog/hollywood-prospectus/post/_/id/57594/judging-the-x-factor-britney"/>
 
 # Project Title
 
+Make Me Laugh
+
 Text about the project. This would also be a great place to link the game on Netlify.
+
+I like to laugh therefore I made a web-site with sounds of laughter.
 
 # Installation
 
