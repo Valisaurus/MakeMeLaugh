@@ -5,23 +5,6 @@
   --border: rgb(186, 51, 186);
 }
 
-/* __________DESKTOP__________ */
-@media screen and (min-width: 700px) {
-  .card {
-    position: absolute;
-    z-index: 99;
-    width: 20rem;
-    background-color: var(--bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-    margin: 2rem;
-    width: 40rem;
-  }
-}
-
 @font-face {
   font-family: 'Rubik Bubbles';
   src: url('./fonts/RubikBubbles-Regular.woff2') format('woff2'),
@@ -43,37 +26,43 @@
   margin: 0;
 }
 body {
-  height: 100vh;
+  position: relative;
+  min-height: 100vh;
   width: 100vw;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  /*
-  background-image: url('./images/haha1x.png');
-  background-color: pink; */
+  background-image: url('/svg/laughs-hahax1585w.svg');
+  background-color: pink;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.card {
-  position: absolute;
+main {
+  position: relative;
   z-index: 99;
-  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  width: 13rem;
   background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  margin: 2rem;
-  width: 15rem;
+  margin: 1rem;
 }
 
 h1 {
@@ -93,25 +82,23 @@ button {
   font-family: 'Mansalva';
 }
 
-/* .mouth {
-  position: absolute;
-} */
-
-/* .mouth.hide {
-  display: none;
-} */
-
-.kul {
+.make-me-laugh {
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
   border-radius: 2rem;
 }
 .background-img {
-  position: absolute;
-  z-index: -1;
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-img {
   width: 100%;
   height: 100%;
+  border-radius: 2rem;
 }
 
 .mouth {
@@ -125,10 +112,36 @@ audio {
   padding: 1rem;
 }
 
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 span {
   align-self: flex-end;
   font-family: 'Mansalva';
   font-size: 0.5rem;
   margin: 0;
   color: var(--primary);
+}
+/* __________DESKTOP__________ */
+@media screen and (min-width: 700px) {
+  .card {
+    position: relative;
+    width: 20rem;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+
+  /* .container {
+    height: auto;
+    width: auto;
+    padding: 5rem;
+  } */
 }

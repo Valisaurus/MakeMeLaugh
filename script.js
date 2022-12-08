@@ -30,9 +30,9 @@ const laughs = [
 
 const laughter = document.querySelector('source');
 
-const main = document.querySelector('main');
+// const main = document.querySelector('main');
 
-const div = document.querySelector('.card');
+const div = document.querySelector('.card-item');
 
 //creating a button
 const createButton = () => {
@@ -73,8 +73,8 @@ const mobileOrDesktop = () => {
         mouth.src = './images/mouth.png';
         mouth.classList.add('mouth');
         mouth.style.position = 'absolute';
-        mouth.style.top = Math.random() * (window.innerHeight - 200) + 'px';
-        mouth.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+        mouth.style.top = Math.random() * (window.innerHeight - 180) + 'px';
+        mouth.style.left = Math.random() * (window.innerWidth - 180) + 'px';
         mouth.style.width = Math.random() * (100 + 100) + 'px';
         mouth.style.transform = 'rotate(angle)';
         body.appendChild(mouth);
