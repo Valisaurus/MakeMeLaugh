@@ -1,5 +1,5 @@
 INSERT MANDATORY GIF
-<img src="http://www.grantland.com/blog/hollywood-prospectus/post/_/id/57594/judging-the-x-factor-britney"/>
+<img src="https://media0.giphy.com/media/AGFelDQ33Djzy/giphy.gif?cid=ecf05e473kfk23wdx4qhp3wome1fkxonc3didi5iebkuxcnx&rid=giphy.gif&ct=g"/>
 
 # Project Title
 
