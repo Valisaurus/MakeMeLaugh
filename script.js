@@ -1,4 +1,4 @@
-//array with laughter sounds
+//array with objects with laughter sounds
 const laughs = [
   {
     name: 'intenseLaugh',
@@ -26,11 +26,7 @@ const laughs = [
   },
 ];
 
-// const laughter = document.querySelectorAll('.laugh-audio');
-
 const laughter = document.querySelector('source');
-
-// const main = document.querySelector('main');
 
 const div = document.querySelector('.card-item');
 
@@ -76,11 +72,11 @@ const mobileOrDesktop = () => {
         mouth.style.top = Math.random() * (window.innerHeight - 180) + 'px';
         mouth.style.left = Math.random() * (window.innerWidth - 180) + 'px';
         mouth.style.width = Math.random() * (100 + 100) + 'px';
-        mouth.style.transform = 'rotate(angle)';
         body.appendChild(mouth);
       }
     });
   } else {
+    //desktop version
     //when hovering over the button mouth images are randomly displayed
     button.addEventListener('mouseover', () => {
       for (i = 0; i < 2; i++) {
@@ -101,7 +97,6 @@ mobileOrDesktop();
 //changes background image depending on screen size (mobile or desktop)
 const backgroundImages = () => {
   if (window.innerWidth < 500) {
-    const bgImg = document.querySelector('background-image');
     document.body.style.backgroundImage = "url('/svg/laughs-hahax640w.svg')";
   } else {
     document.body.style.backgroundImage = "url('/svg/laughs-hahax1585w.svg')";
