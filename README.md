@@ -15,11 +15,11 @@ Add the installation instructions.
 
 # Code Review
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `script.js:31 ` - Const div could be named card-item for easier understanding.
+1. `script.js:60 ` - The body could be retrieved by calling document.body.
+1. `script.js:67–90 ` - It’s similar code that could be run as a function that takes two parameters for the top and left offsets. 
+1. `script.js:95 ` - The mobile or desktop function could be run in a resize event as well.
+1. `.gitignore` - Should have an ignore for .DS_Store.
 
 # Testers
 
