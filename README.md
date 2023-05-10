@@ -5,8 +5,6 @@ INSERT MANDATORY GIF
 
 Make Me Laugh
 
-Text about the project. This would also be a great place to link the game on Netlify.
-
 I like to laugh therefore I made a web-site with sounds of laughter.
 
 # Installation
